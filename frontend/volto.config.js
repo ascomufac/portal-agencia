@@ -1,5 +1,5 @@
 const addons = ['volto-portal-agencia'];
-const theme = '';
+const theme = '@kitconcept/volto-light-theme';
 
 module.exports = {
   addons,
