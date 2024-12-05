@@ -566,7 +566,7 @@ importers:
         version: 1.0.10
       wait-on:
         specifier: ^7.2.0
-        version: 7.2.0
+        version: 7.2.0(debug@4.3.2)
     devDependencies:
       release-it:
         specifier: ^16.1.3
@@ -1393,6 +1393,30 @@ importers:
 
   packages/volto-portal-agencia:
     dependencies:
+      '@eeacms/volto-accordion-block':
+        specifier: 10.4.6
+        version: 10.4.6
+      '@kitconcept/volto-button-block':
+        specifier: 3.0.2
+        version: 3.0.2(classnames@2.2.6)(react-dom@18.2.0(react@18.2.0))(react-intl@3.12.1(react@18.2.0))(react@18.2.0)
+      '@kitconcept/volto-dsgvo-banner':
+        specifier: 2.3.2
+        version: 2.3.2
+      '@kitconcept/volto-heading-block':
+        specifier: 2.4.0
+        version: 2.4.0(react@18.2.0)
+      '@kitconcept/volto-highlight-block':
+        specifier: 4.0.0
+        version: 4.0.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      '@kitconcept/volto-introduction-block':
+        specifier: 1.0.0
+        version: 1.0.0
+      '@kitconcept/volto-separator-block':
+        specifier: 4.1.2
+        version: 4.1.2(react-dom@18.2.0(react@18.2.0))(react-intl@3.12.1(react@18.2.0))(react@18.2.0)(storybook@8.4.6(prettier@3.2.5))
+      '@kitconcept/volto-slider-block':
+        specifier: 6.3.1
+        version: 6.3.1(@plone/volto@18.1.1(@babel/runtime@7.26.0)(@popperjs/core@2.11.8)(@types/react-dom@18.2.12)(@types/react@18.2.27)(react-with-direction@1.4.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(seamless-immutable@7.1.4))(embla-carousel@8.5.1)(react@18.2.0)
       react:
         specifier: 18.2.0
         version: 18.2.0
@@ -2247,6 +2271,9 @@ packages:
   '@cypress/xvfb@1.2.4':
     resolution: {integrity: sha512-skbBzPggOVYCbnGgV+0dmBdW/s77ZkAOXIC1knS8NagwDjBrNC1LuXtQJeiN6l+m7lzmHtaoUw/ctJKdqkG57Q==}
 
+  '@datapunt/matomo-tracker-js@0.5.1':
+    resolution: {integrity: sha512-9/MW9vt/BA5Db7tO6LqCeQKtuvBNjyq51faF3AzUmPMlYsJCnASIxcut3VqJKiribhUoey7aYbPIYuj9x4DLPA==}
+
   '@discoveryjs/json-ext@0.5.7':
     resolution: {integrity: sha512-dBVuXR082gk3jsFp7Rd/JI4kytwGHecnCoTtXFb7DB6CNHp4rg5k1bhg0nWdLGLnOV71lmDzGQaLMy8iPLY0pw==}
     engines: {node: '>=10.0.0'}
@@ -2275,6 +2302,12 @@ packages:
 
   '@dual-bundle/import-meta-resolve@4.1.0':
     resolution: {integrity: sha512-+nxncfwHM5SgAtrVzgpzJOI1ol0PkumhVo469KCf9lUi21IGcY90G98VuHm9VRrUypmAzawAHO9bs6hqeADaVg==}
+
+  '@eeacms/volto-accordion-block@10.4.6':
+    resolution: {integrity: sha512-IZfAg8By1dZA2SSr4MNu2gFCs0F67/ZMAlpdqkevSMvkBREjny97cEFtMjkhGyOc3MBTp1vd0TtqvL3cN1GehQ==}
+
+  '@eeacms/volto-widget-theme-picker@2.0.0':
+    resolution: {integrity: sha512-f3+B7ATw0EoehO2rqU9NZoJABBtFUGy+zDGynm7MCSsfWcy6yafmCsOw2MKssBFXkgBicfpLLdE8ESEEITy6aA==}
 
   '@emotion/babel-plugin@11.13.5':
     resolution: {integrity: sha512-pxHCpT2ex+0q+HH91/zsdHkw/lXd468DIN2zvfvLtPKLLMo6gQj7oLObq8PhkrxOZb/gGCq03S3Z7PDhS8pduQ==}
@@ -2834,6 +2867,41 @@ packages:
   '@juggle/resize-observer@3.4.0':
     resolution: {integrity: sha512-dfLbk+PwWvFzSxwk3n5ySL0hfBog779o8h68wK/7/APo/7cgyWp5jcXockbxdk5kFRkbeXWm4Fbi9FrdN381sA==}
 
+  '@kitconcept/volto-button-block@3.0.2':
+    resolution: {integrity: sha512-nnmEeCu4RDJvlvj7IYuBf7HPuqMRzphmEm+WjtZ3ah/6l0mr6dH7/lA0IfYRwzGX1pAzla1wodih7JopfwQ9bw==}
+    peerDependencies:
+      classnames: ^2.2.6
+      react: 18.2.0
+      react-dom: 18.2.0
+      react-intl: ^3.12.1
+
+  '@kitconcept/volto-dsgvo-banner@2.3.2':
+    resolution: {integrity: sha512-iguCyuy4a7dYi1glWorVY7/0co66Su3+acp2O24GEGyDHvrZJgNkKvIOc9nnmAvR6g9zluMWH5ilLaT1rZuT6w==}
+
+  '@kitconcept/volto-heading-block@2.4.0':
+    resolution: {integrity: sha512-NbXsksnfEtaaHHln7SdZ8/BA0jTLilCH6uQ/CeL6auc+zzssqRyFRTr+PArGRUSCWP/e10esewYaN9M+H7oxgQ==}
+
+  '@kitconcept/volto-highlight-block@4.0.0':
+    resolution: {integrity: sha512-5xkgXjVU1mwujcO2jjsxGNNouS2zyHGhKPxAbj0nyz8GsVoYqhnoQKm7IG05Lp/Zh39PNCXHzFpHxhtlJLxK1g==}
+    peerDependencies:
+      react: 18.2.0
+      react-dom: 18.2.0
+
+  '@kitconcept/volto-introduction-block@1.0.0':
+    resolution: {integrity: sha512-17wbBx89zcSQzXbdWvKBDlw0aJfTzjaX3cJUBorHjrJgOcTx7WBahIhBPjnC2z4EYmZ5w9YdHolqdD9HUlpozw==}
+
+  '@kitconcept/volto-separator-block@4.1.2':
+    resolution: {integrity: sha512-SWgIu7/XmZA0BK0LX+ObM7w1YdFAyRAxQUBt/ICka+KKsIVUpYeBUiJ+Q9d9Z5bneh7Fwv3Oik6CAJ5BhqCn2A==}
+    peerDependencies:
+      react: 18.2.0
+      react-dom: 18.2.0
+      react-intl: 3.8.0
+
+  '@kitconcept/volto-slider-block@6.3.1':
+    resolution: {integrity: sha512-bkn1M1Lcl8P067dAUeYeWsLw5P4ZpjbKg+7Tt3/rjx7oVg4VQX/QsRfOKojQPGeFL3ifmzk9mJoW4rCF4QGFdw==}
+    peerDependencies:
+      '@plone/volto': ^17.0.0-alpha.21 || ^18.0.0-alpha.0
+
   '@kwsites/file-exists@1.1.1':
     resolution: {integrity: sha512-m9/5YGR18lIwxSFDwfE3oA7bWuq9kdau6ugN4H2rJeyhFQZcG9AgSHkQtSD15a8WvTgfz9aikZMrKPHvbpqFiw==}
 
@@ -3230,9 +3298,34 @@ packages:
     resolution: {integrity: sha512-cq8o4cWH0ibXh9VGi5P20Tu9XF/0fFXl9EUinr9QfTM7a7p0oTA4iJRCQWppXR1Pg8dSM0UCItCkPwsk9qWWYA==}
     engines: {node: ^12.20.0 || ^14.18.0 || >=16.0.0}
 
+  '@plone/components@2.0.0-alpha.9':
+    resolution: {integrity: sha512-/UkeVcjuLl33xVDdDFUdxAEFIjsHOrRgPtgTCJhmf4US+AW0QgvLNzi3O/8azn5nWdQTaOGXSxujGypAX0HyRA==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
+    peerDependenciesMeta:
+      react-dom:
+        optional: true
+
+  '@plone/registry@2.1.2':
+    resolution: {integrity: sha512-axmsDNF+p5q2P/9j3v0is1P967MTSkAF2yl2gaYWbwnpPB8rfNVnTzw3HQa6o09qyt20wR8b4aUVlvlWXpi2Zw==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
+    peerDependenciesMeta:
+      react-dom:
+        optional: true
+
   '@plone/scripts@3.8.1':
     resolution: {integrity: sha512-BfaxtwsfiquuVharjhGpj61VaUJ222/9V0V0vIrFPpjtU4i3fMkw9t8O8zoPp+b0zmEzkLbFdcPFuG1iz1a8IA==}
     hasBin: true
+
+  '@plone/volto-slate@18.0.1':
+    resolution: {integrity: sha512-gE7d/4H4PUN2gfTDa00NOzu6TnuGu4F3I9FykCF72tUazxgv2h+mYNE/SYtIsb2k/CvLzT0NFimrD8BbFy0u6w==}
+
+  '@plone/volto@18.1.1':
+    resolution: {integrity: sha512-vSy0Z/GyCTw6+IQHG0X1auxx/LdhZwTDTzjzPcaDieF3PMI0kCmSJrGZ7e8UgIohE080blXC6GWM4/RsHhB/vA==}
+    engines: {node: ^20 || ^22}
 
   '@pmmmwh/react-refresh-webpack-plugin@0.5.15':
     resolution: {integrity: sha512-LFWllMA55pzB9D34w/wXUCf8+c+IYKuJDgxiZ3qMhl64KRMBHYM1I3VdGaD2BV5FNPV2/S2596bppxHbv2ZydQ==}
@@ -6564,6 +6657,10 @@ packages:
     resolution: {integrity: sha512-95k0GDqvBjZavkuvzx/YqVLv/6YYa17fz6ILMSf7neqQITCPbnfEnQvEgMPNjH4kgobe7+WIL0yJEHku+H3qtQ==}
     engines: {node: '>=0.10.0'}
 
+  deepmerge@4.2.2:
+    resolution: {integrity: sha512-FJ3UgI4gIl+PHZm53knsuSFpE+nESMr7M4v9QcgB7S63Kj/6WqMiFQJpBBYz1Pt+66bZpP3Q7Lye0Oo9MPKEdg==}
+    engines: {node: '>=0.10.0'}
+
   deepmerge@4.3.1:
     resolution: {integrity: sha512-3sUqbMEc77XqpdNO7FRyRog+eW3ph+GYCbj+rK+uYyRMuwsVy0rMiVtPn+QJlKFvWP/1PYpapqYn0Me2knFn+A==}
     engines: {node: '>=0.10.0'}
@@ -6828,6 +6925,24 @@ packages:
 
   electron-to-chromium@1.5.68:
     resolution: {integrity: sha512-FgMdJlma0OzUYlbrtZ4AeXjKxKPk6KT8WOP8BjcqxWtlg8qyJQjRzPJzUtUn5GBg1oQ26hFs7HOOHJMYiJRnvQ==}
+
+  embla-carousel-autoplay@8.5.1:
+    resolution: {integrity: sha512-FnZklFpePfp8wbj177UwVaGFehgs+ASVcJvYLWTtHuYKURynCc3IdDn2qrn0E5Qpa3g9yeGwCS4p8QkrZmO8xg==}
+    peerDependencies:
+      embla-carousel: 8.5.1
+
+  embla-carousel-react@8.5.1:
+    resolution: {integrity: sha512-z9Y0K84BJvhChXgqn2CFYbfEi6AwEr+FFVVKm/MqbTQ2zIzO1VQri6w67LcfpVF0AjbhwVMywDZqY4alYkjW5w==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.1 || ^18.0.0 || ^19.0.0 || ^19.0.0-rc
+
+  embla-carousel-reactive-utils@8.5.1:
+    resolution: {integrity: sha512-n7VSoGIiiDIc4MfXF3ZRTO59KDp820QDuyBDGlt5/65+lumPHxX2JLz0EZ23hZ4eg4vZGUXwMkYv02fw2JVo/A==}
+    peerDependencies:
+      embla-carousel: 8.5.1
+
+  embla-carousel@8.5.1:
+    resolution: {integrity: sha512-JUb5+FOHobSiWQ2EJNaueCNT/cQU9L6XWBbWmorWPQT9bkbk+fhsuLr8wWrzXKagO3oWszBO7MSx+GfaRk4E6A==}
 
   emittery@0.7.2:
     resolution: {integrity: sha512-A8OG5SR/ij3SsJdWDJdkkSYUjQdCUx6APQXem0SaEePBSRg4eymGYwBkKo1Y6DU+af/Jn2dBQqDBvjnr9Vi8nQ==}
@@ -11140,6 +11255,11 @@ packages:
       react: ^16.8.5
       react-dom: ^16.8.5
 
+  react-contenteditable@3.3.6:
+    resolution: {integrity: sha512-61+Anbmzggel1sP7nwvxq3d2woD3duR5R89RoLGqKan1A+nruFIcmLjw2F+qqk70AyABls0BDKzE1vqS1UIF1g==}
+    peerDependencies:
+      react: '>=16.3'
+
   react-cookie@4.1.1:
     resolution: {integrity: sha512-ffn7Y7G4bXiFbnE+dKhHhbP+b8I34mH9jqnm8Llhj89zF4nPxPutxHT1suUqMeCEhLDBI7InYwf1tpaSoK5w8A==}
     peerDependencies:
@@ -11218,6 +11338,9 @@ packages:
 
   react-fast-compare@3.2.2:
     resolution: {integrity: sha512-nsO+KSNgo1SbJqJEYRE9ERzo7YtYbou/OqjSQKxV7jcKox7+usiUVZOAC+XnDOABXggQTno0Y1CpVnuWEc1boQ==}
+
+  react-ga4@2.1.0:
+    resolution: {integrity: sha512-ZKS7PGNFqqMd3PJ6+C2Jtz/o1iU9ggiy8Y8nUeksgVuvNISbmrQtJiZNvC/TjDsqD0QlU5Wkgs7i+w9+OjHhhQ==}
 
   react-image-gallery@1.2.7:
     resolution: {integrity: sha512-ts7yMWykvZhslGMuvVAUk7a1dJIx9QtIwK6Clv8dOGxPsJid92FRrLvXbZDvkYcUyj48sHalnBhqU6mZNCB2jg==}
@@ -14822,6 +14945,8 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  '@datapunt/matomo-tracker-js@0.5.1': {}
+
   '@discoveryjs/json-ext@0.5.7': {}
 
   '@dnd-kit/accessibility@3.1.1(react@18.2.0)':
@@ -14850,6 +14975,12 @@ snapshots:
       tslib: 2.8.1
 
   '@dual-bundle/import-meta-resolve@4.1.0': {}
+
+  '@eeacms/volto-accordion-block@10.4.6':
+    dependencies:
+      '@eeacms/volto-widget-theme-picker': 2.0.0
+
+  '@eeacms/volto-widget-theme-picker@2.0.0': {}
 
   '@emotion/babel-plugin@11.13.5':
     dependencies:
@@ -15465,6 +15596,50 @@ snapshots:
 
   '@juggle/resize-observer@3.4.0': {}
 
+  '@kitconcept/volto-button-block@3.0.2(classnames@2.2.6)(react-dom@18.2.0(react@18.2.0))(react-intl@3.12.1(react@18.2.0))(react@18.2.0)':
+    dependencies:
+      classnames: 2.2.6
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      react-intl: 3.12.1(react@18.2.0)
+
+  '@kitconcept/volto-dsgvo-banner@2.3.2':
+    dependencies:
+      '@datapunt/matomo-tracker-js': 0.5.1
+      react-ga4: 2.1.0
+
+  '@kitconcept/volto-heading-block@2.4.0(react@18.2.0)':
+    dependencies:
+      react-contenteditable: 3.3.6(react@18.2.0)
+    transitivePeerDependencies:
+      - react
+
+  '@kitconcept/volto-highlight-block@4.0.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+
+  '@kitconcept/volto-introduction-block@1.0.0': {}
+
+  '@kitconcept/volto-separator-block@4.1.2(react-dom@18.2.0(react@18.2.0))(react-intl@3.12.1(react@18.2.0))(react@18.2.0)(storybook@8.4.6(prettier@3.2.5))':
+    dependencies:
+      '@plone/components': 2.0.0-alpha.9(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(storybook@8.4.6(prettier@3.2.5))
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      react-intl: 3.12.1(react@18.2.0)
+    transitivePeerDependencies:
+      - storybook
+
+  '@kitconcept/volto-slider-block@6.3.1(@plone/volto@18.1.1(@babel/runtime@7.26.0)(@popperjs/core@2.11.8)(@types/react-dom@18.2.12)(@types/react@18.2.27)(react-with-direction@1.4.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(seamless-immutable@7.1.4))(embla-carousel@8.5.1)(react@18.2.0)':
+    dependencies:
+      '@plone/volto': 18.1.1(@babel/runtime@7.26.0)(@popperjs/core@2.11.8)(@types/react-dom@18.2.12)(@types/react@18.2.27)(react-with-direction@1.4.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(seamless-immutable@7.1.4)
+      deepmerge: 4.2.2
+      embla-carousel-autoplay: 8.5.1(embla-carousel@8.5.1)
+      embla-carousel-react: 8.5.1(react@18.2.0)
+    transitivePeerDependencies:
+      - embla-carousel
+      - react
+
   '@kwsites/file-exists@1.1.1':
     dependencies:
       debug: 4.3.4(supports-color@8.1.1)
@@ -16036,6 +16211,33 @@ snapshots:
 
   '@pkgr/core@0.1.1': {}
 
+  '@plone/components@2.0.0-alpha.9(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(storybook@8.4.6(prettier@3.2.5))':
+    dependencies:
+      '@react-aria/utils': 3.26.0(react@18.2.0)
+      '@react-spectrum/utils': 3.12.0(react@18.2.0)
+      '@storybook/test': 8.4.6(storybook@8.4.6(prettier@3.2.5))
+      clsx: 2.1.1
+      react: 18.2.0
+      react-aria-components: 1.5.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+    optionalDependencies:
+      react-dom: 18.2.0(react@18.2.0)
+    transitivePeerDependencies:
+      - storybook
+
+  '@plone/registry@2.1.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
+    dependencies:
+      auto-config-loader: 1.7.8
+      crypto-random-string: 3.2.0
+      debug: 4.3.2
+      dependency-graph: 0.10.0
+      glob: 10.4.5
+      react: 18.2.0
+      tmp: 0.2.1
+    optionalDependencies:
+      react-dom: 18.2.0(react@18.2.0)
+    transitivePeerDependencies:
+      - supports-color
+
   '@plone/scripts@3.8.1':
     dependencies:
       '@babel/core': 7.26.0
@@ -16056,6 +16258,168 @@ snapshots:
     transitivePeerDependencies:
       - debug
       - supports-color
+
+  '@plone/scripts@3.8.1(debug@4.3.2)':
+    dependencies:
+      '@babel/core': 7.26.0
+      babel-plugin-react-intl: 5.1.17
+      babel-preset-razzle: 4.2.17
+      chalk: 4.1.2
+      commander: 8.2.0
+      comment-json: 4.2.5
+      execa: 0.6.3
+      find-parent-dir: 0.3.1
+      fs-extra: 10.1.0
+      git-url-parse: 13.1.1
+      glob: 7.1.6
+      lodash: 4.17.21
+      mrs-developer: 2.3.0
+      pofile: 1.0.10
+      wait-on: 7.2.0(debug@4.3.2)
+    transitivePeerDependencies:
+      - debug
+      - supports-color
+
+  '@plone/volto-slate@18.0.1(@types/react-dom@18.2.12)(@types/react@18.2.27)(redux@4.2.1)':
+    dependencies:
+      classnames: 2.2.6
+      github-slugger: 1.4.0
+      image-extensions: 1.1.0
+      is-hotkey: 0.2.0
+      is-url: 1.2.4
+      jsdom: 16.7.0
+      lodash: 4.17.21
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      react-intersection-observer: 9.1.0(react@18.2.0)
+      react-intl: 3.12.1(react@18.2.0)
+      react-redux: 8.1.2(@types/react-dom@18.2.12)(@types/react@18.2.27)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(redux@4.2.1)
+      react-router-dom: 5.2.0(react@18.2.0)
+      react-toastify: 5.5.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      redux-mock-store: 1.5.4
+      semantic-ui-react: 2.1.5(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      slate: 0.100.0
+      slate-history: 0.100.0(slate@0.100.0)
+      slate-hyperscript: 0.100.0(slate@0.100.0)
+      slate-react: 0.98.4(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.100.0)
+      uuid: 9.0.1
+      weak-key: 1.0.3
+    transitivePeerDependencies:
+      - '@types/react'
+      - '@types/react-dom'
+      - bufferutil
+      - canvas
+      - react-native
+      - redux
+      - supports-color
+      - utf-8-validate
+
+  '@plone/volto@18.1.1(@babel/runtime@7.26.0)(@popperjs/core@2.11.8)(@types/react-dom@18.2.12)(@types/react@18.2.27)(react-with-direction@1.4.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(seamless-immutable@7.1.4)':
+    dependencies:
+      '@loadable/component': 5.14.1(react@18.2.0)
+      '@loadable/server': 5.14.0(@loadable/component@5.14.1(react@18.2.0))(react@18.2.0)
+      '@plone/registry': 2.1.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      '@plone/scripts': 3.8.1(debug@4.3.2)
+      '@plone/volto-slate': 18.0.1(@types/react-dom@18.2.12)(@types/react@18.2.27)(redux@4.2.1)
+      '@redux-devtools/extension': 3.3.0(redux@4.2.1)
+      classnames: 2.2.6
+      connected-react-router: 6.8.0(history@4.10.1)(immutable@3.8.2)(react-redux@8.1.2(@types/react-dom@18.2.12)(@types/react@18.2.27)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(redux@4.2.1))(react-router@5.2.0(react@18.2.0))(react@18.2.0)(redux@4.2.1)(seamless-immutable@7.1.4)
+      debug: 4.3.2
+      decorate-component-with-props: 1.2.1(react@18.2.0)
+      dependency-graph: 0.10.0
+      detect-browser: 5.1.0
+      diff: 3.5.0
+      express: 4.19.2
+      filesize: 6.4.0
+      github-slugger: 1.4.0
+      history: 4.10.1
+      hoist-non-react-statics: 3.3.2
+      http-proxy-middleware: 2.0.1(debug@4.3.2)
+      image-extensions: 1.1.0
+      immutable: 3.8.2
+      is-hotkey: 0.2.0
+      is-url: 1.2.4
+      jotai: 2.0.3(react@18.2.0)
+      jwt-decode: 2.2.0
+      linkify-it: 3.0.2
+      locale: 0.1.0
+      lodash: 4.17.21
+      lodash-move: 1.1.1
+      moment: 2.29.4
+      object-assign: 4.1.1
+      prepend-http: 2.0.0
+      pretty-bytes: 5.3.0
+      prismjs: 1.27.0
+      process: 0.11.10
+      promise-file-reader: 1.0.2
+      prop-types: 15.7.2
+      query-string: 7.1.0
+      rc-time-picker: 3.7.3(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      react: 18.2.0
+      react-anchor-link-smooth-scroll: 1.0.12
+      react-animate-height: 2.0.17(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      react-beautiful-dnd: 13.0.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      react-cookie: 4.1.1(react@18.2.0)
+      react-dates: 21.5.1(@babel/runtime@7.26.0)(moment@2.29.4)(react-dom@18.2.0(react@18.2.0))(react-with-direction@1.4.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react@18.2.0)
+      react-detect-click-outside: 1.1.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      react-dnd: 5.0.0(react@18.2.0)
+      react-dnd-html5-backend: 5.0.1
+      react-dom: 18.2.0(react@18.2.0)
+      react-dropzone: 11.1.0(react@18.2.0)
+      react-fast-compare: 2.0.4
+      react-image-gallery: 1.2.7(react@18.2.0)
+      react-intersection-observer: 9.1.0(react@18.2.0)
+      react-intl: 3.12.1(react@18.2.0)
+      react-intl-redux: 2.3.0(@babel/runtime@7.26.0)(prop-types@15.7.2)(react-intl@3.12.1(react@18.2.0))(react-redux@8.1.2(@types/react-dom@18.2.12)(@types/react@18.2.27)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(redux@4.2.1))(react@18.2.0)
+      react-medium-image-zoom: 3.0.15(prop-types@15.7.2)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      react-popper: 2.3.0(@popperjs/core@2.11.8)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      react-redux: 8.1.2(@types/react-dom@18.2.12)(@types/react@18.2.27)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(redux@4.2.1)
+      react-router: 5.2.0(react@18.2.0)
+      react-router-config: 5.1.1(react-router@5.2.0(react@18.2.0))(react@18.2.0)
+      react-router-dom: 5.2.0(react@18.2.0)
+      react-router-hash-link: 2.4.3(react-router-dom@5.2.0(react@18.2.0))(react@18.2.0)
+      react-select: 4.3.1(@types/react@18.2.27)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      react-select-async-paginate: 0.5.3(react-dom@18.2.0(react@18.2.0))(react-select@4.3.1(@types/react@18.2.27)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react@18.2.0)
+      react-side-effect: 2.1.2(react@18.2.0)
+      react-simple-code-editor: 0.7.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      react-sortable-hoc: 2.0.0(prop-types@15.7.2)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      react-test-renderer: 18.2.0(react@18.2.0)
+      react-toastify: 5.5.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      react-transition-group: 4.4.5(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      react-virtualized: 9.22.3(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      redux: 4.2.1
+      redux-actions: 3.0.0
+      redux-connect: 10.0.0(prop-types@15.7.2)(react-redux@8.1.2(@types/react-dom@18.2.12)(@types/react@18.2.27)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(redux@4.2.1))(react-router-config@5.1.1(react-router@5.2.0(react@18.2.0))(react@18.2.0))(react-router-dom@5.2.0(react@18.2.0))(react-router@5.2.0(react@18.2.0))(react@18.2.0)(redux-actions@3.0.0)
+      redux-localstorage-simple: 2.5.1
+      redux-mock-store: 1.5.4
+      redux-thunk: 2.4.2(redux@4.2.1)
+      rrule: 2.7.1
+      semantic-ui-less: 2.4.1
+      semantic-ui-react: 2.1.5(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      serialize-javascript: 3.1.0
+      slate: 0.100.0
+      slate-hyperscript: 0.100.0(slate@0.100.0)
+      slate-react: 0.98.4(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.100.0)
+      superagent: 3.8.2
+      tlds: 1.203.1
+      undoo: 0.5.0
+      universal-cookie: 4.0.4
+      universal-cookie-express: 4.0.3
+      url: 0.11.4
+      use-deep-compare-effect: 1.8.1(react@18.2.0)
+      uuid: 8.3.2
+    transitivePeerDependencies:
+      - '@babel/runtime'
+      - '@popperjs/core'
+      - '@types/react'
+      - '@types/react-dom'
+      - bufferutil
+      - canvas
+      - react-native
+      - react-with-direction
+      - seamless-immutable
+      - supports-color
+      - utf-8-validate
 
   '@pmmmwh/react-refresh-webpack-plugin@0.5.15(react-refresh@0.14.2)(sockjs-client@1.4.0)(type-fest@2.19.0)(webpack-dev-server@4.11.1(debug@4.3.2)(webpack@5.90.1(esbuild@0.24.0)))(webpack-hot-middleware@2.26.1)(webpack@5.90.1(esbuild@0.24.0))':
     dependencies:
@@ -18991,7 +19355,7 @@ snapshots:
     transitivePeerDependencies:
       - debug
 
-  axios@1.7.9:
+  axios@1.7.9(debug@4.3.2):
     dependencies:
       follow-redirects: 1.15.9(debug@4.3.2)
       form-data: 4.0.1
@@ -20559,6 +20923,8 @@ snapshots:
 
   deepmerge@1.5.2: {}
 
+  deepmerge@4.2.2: {}
+
   deepmerge@4.3.1: {}
 
   default-browser-id@3.0.0:
@@ -20804,6 +21170,22 @@ snapshots:
       jake: 10.9.2
 
   electron-to-chromium@1.5.68: {}
+
+  embla-carousel-autoplay@8.5.1(embla-carousel@8.5.1):
+    dependencies:
+      embla-carousel: 8.5.1
+
+  embla-carousel-react@8.5.1(react@18.2.0):
+    dependencies:
+      embla-carousel: 8.5.1
+      embla-carousel-reactive-utils: 8.5.1(embla-carousel@8.5.1)
+      react: 18.2.0
+
+  embla-carousel-reactive-utils@8.5.1(embla-carousel@8.5.1):
+    dependencies:
+      embla-carousel: 8.5.1
+
+  embla-carousel@8.5.1: {}
 
   emittery@0.7.2: {}
 
@@ -26482,6 +26864,12 @@ snapshots:
     transitivePeerDependencies:
       - react-native
 
+  react-contenteditable@3.3.6(react@18.2.0):
+    dependencies:
+      fast-deep-equal: 3.1.3
+      prop-types: 15.7.2
+      react: 18.2.0
+
   react-cookie@4.1.1(react@18.2.0):
     dependencies:
       '@types/hoist-non-react-statics': 3.3.5
@@ -26510,6 +26898,28 @@ snapshots:
       react-with-direction: 1.4.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       react-with-styles: 4.2.0(@babel/runtime@7.20.6)(react-with-direction@1.4.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react@18.2.0)
       react-with-styles-interface-css: 6.0.0(@babel/runtime@7.20.6)(react-with-styles@4.2.0(@babel/runtime@7.20.6)(react-with-direction@1.4.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react@18.2.0))
+
+  react-dates@21.5.1(@babel/runtime@7.26.0)(moment@2.29.4)(react-dom@18.2.0(react@18.2.0))(react-with-direction@1.4.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react@18.2.0):
+    dependencies:
+      '@babel/runtime': 7.26.0
+      airbnb-prop-types: 2.16.0(react@18.2.0)
+      consolidated-events: 2.0.2
+      enzyme-shallow-equal: 1.0.7
+      is-touch-device: 1.0.1
+      lodash: 4.17.21
+      moment: 2.29.4
+      object.assign: 4.1.5
+      object.values: 1.2.0
+      prop-types: 15.7.2
+      raf: 3.4.1
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      react-moment-proptypes: 1.8.1(moment@2.29.4)
+      react-outside-click-handler: 1.3.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      react-portal: 4.2.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      react-with-direction: 1.4.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      react-with-styles: 4.2.0(@babel/runtime@7.26.0)(react-with-direction@1.4.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react@18.2.0)
+      react-with-styles-interface-css: 6.0.0(@babel/runtime@7.26.0)(react-with-styles@4.2.0(@babel/runtime@7.26.0)(react-with-direction@1.4.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react@18.2.0))
 
   react-detect-click-outside@1.1.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
     dependencies:
@@ -26623,6 +27033,8 @@ snapshots:
 
   react-fast-compare@3.2.2: {}
 
+  react-ga4@2.1.0: {}
+
   react-image-gallery@1.2.7(react@18.2.0):
     dependencies:
       react: 18.2.0
@@ -26639,6 +27051,14 @@ snapshots:
   react-intl-redux@2.3.0(@babel/runtime@7.20.6)(prop-types@15.7.2)(react-intl@3.12.1(react@18.2.0))(react-redux@8.1.2(@types/react-dom@18.2.12)(@types/react@18.2.27)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(redux@4.2.1))(react@18.2.0):
     dependencies:
       '@babel/runtime': 7.20.6
+      prop-types: 15.7.2
+      react: 18.2.0
+      react-intl: 3.12.1(react@18.2.0)
+      react-redux: 8.1.2(@types/react-dom@18.2.12)(@types/react@18.2.27)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(redux@4.2.1)
+
+  react-intl-redux@2.3.0(@babel/runtime@7.26.0)(prop-types@15.7.2)(react-intl@3.12.1(react@18.2.0))(react-redux@8.1.2(@types/react-dom@18.2.12)(@types/react@18.2.27)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(redux@4.2.1))(react@18.2.0):
+    dependencies:
+      '@babel/runtime': 7.26.0
       prop-types: 15.7.2
       react: 18.2.0
       react-intl: 3.12.1(react@18.2.0)
@@ -26907,9 +27327,26 @@ snapshots:
       global-cache: 1.2.1
       react-with-styles: 4.2.0(@babel/runtime@7.20.6)(react-with-direction@1.4.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react@18.2.0)
 
+  react-with-styles-interface-css@6.0.0(@babel/runtime@7.26.0)(react-with-styles@4.2.0(@babel/runtime@7.26.0)(react-with-direction@1.4.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react@18.2.0)):
+    dependencies:
+      '@babel/runtime': 7.26.0
+      array.prototype.flat: 1.3.2
+      global-cache: 1.2.1
+      react-with-styles: 4.2.0(@babel/runtime@7.26.0)(react-with-direction@1.4.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react@18.2.0)
+
   react-with-styles@4.2.0(@babel/runtime@7.20.6)(react-with-direction@1.4.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react@18.2.0):
     dependencies:
       '@babel/runtime': 7.20.6
+      airbnb-prop-types: 2.16.0(react@18.2.0)
+      hoist-non-react-statics: 3.3.2
+      object.assign: 4.1.5
+      prop-types: 15.7.2
+      react: 18.2.0
+      react-with-direction: 1.4.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+
+  react-with-styles@4.2.0(@babel/runtime@7.26.0)(react-with-direction@1.4.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react@18.2.0):
+    dependencies:
+      '@babel/runtime': 7.26.0
       airbnb-prop-types: 2.16.0(react@18.2.0)
       hoist-non-react-statics: 3.3.2
       object.assign: 4.1.5
@@ -29447,7 +29884,17 @@ snapshots:
 
   wait-on@7.2.0:
     dependencies:
-      axios: 1.7.9
+      axios: 1.7.9(debug@4.3.2)
+      joi: 17.13.3
+      lodash: 4.17.21
+      minimist: 1.2.8
+      rxjs: 7.8.1
+    transitivePeerDependencies:
+      - debug
+
+  wait-on@7.2.0(debug@4.3.2):
+    dependencies:
+      axios: 1.7.9(debug@4.3.2)
       joi: 17.13.3
       lodash: 4.17.21
       minimist: 1.2.8
