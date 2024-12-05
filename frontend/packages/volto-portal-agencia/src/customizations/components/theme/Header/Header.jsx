@@ -2,6 +2,16 @@ import { Anontools, Logo, Navigation } from '@plone/volto/components';
 import style from './Header.module.css';
 
 export default function Header() {
+  const getFormattedDate = () => {
+    const options = {
+      weekday: 'long',
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+    };
+    return new Date().toLocaleDateString('pt-BR', options);
+  };
+
   return (
     <div>
       <nav className={style.navTopContainer}>
@@ -11,7 +21,7 @@ export default function Header() {
         </div>
       </nav>
       <div className={style.containerHeaderLogo}>
-        <Date />
+        <div>{getFormattedDate()}</div>
         <Logo />
         <div>
           <Anontools />

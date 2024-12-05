@@ -26,14 +26,14 @@
     "release-major-alpha": "release-it major --preRelease=alpha",
     "release-alpha": "release-it --preRelease=alpha"
   },
-"addons": [
-  "@eeacms/volto-accordion-block",
-  "@kitconcept/volto-button-block",
-  "@kitconcept/volto-heading-block",
-  "@kitconcept/volto-introduction-block",
-  "@kitconcept/volto-highlight-block",
-  "@kitconcept/volto-separator-block"
-],
+  "addons": [
+    "@eeacms/volto-accordion-block",
+    "@kitconcept/volto-button-block",
+    "@kitconcept/volto-heading-block",
+    "@kitconcept/volto-introduction-block",
+    "@kitconcept/volto-highlight-block",
+    "@kitconcept/volto-separator-block"
+  ],
   "dependencies": {
     "@eeacms/volto-accordion-block": "10.4.6",
     "@kitconcept/volto-button-block": "3.0.2",
