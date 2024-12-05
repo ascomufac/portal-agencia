@@ -1,0 +1,38 @@
+/* stylelint-disable order/properties-order */
+.containerHeaderLogo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  padding: 1rem 10rem;
+  background-color: #cee1ec;
+}
+
+.navegationHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  background-color: #c1d1da;
+}
+
+.navTopContainer {
+  color: #e1e5e7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 2rem;
+  background-color: #022336;
+  padding: 2rem;
+  padding-left: 2rem;
+}
+
+.navTopContainer a {
+  color: aliceblue;
+}
+
+.navTopContainerLinks {
+  display: flex;
+  gap: 2rem;
+}
